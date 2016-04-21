@@ -1,0 +1,23 @@
+{
+  "name": "google-search-cli",
+  "version": "0.0.1",
+  "description": "Tiny package to search Google from CLI",
+  "main": "google-search-cli",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShivanKaul/google-search-cli.git"
+  },
+  "bin": {
+    "g": "google-search-cli"
+  },
+  "keywords": [
+    "google-search",
+    "cli"
+  ],
+  "author": "Shivan Kaul",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ShivanKaul/google-search-cli/issues"
+  },
+  "homepage": "https://github.com/ShivanKaul/google-search-cli#readme"
+}
