@@ -6,16 +6,17 @@
 
 # Adapted from http://superuser.com/a/47216
 
-g() {
-    search=""
-    for term in $@; do
-        search="$search$term%20"
-    done
-    if [ "$(uname)" == "Darwin" ]; then
-        open "http://www.google.com/search?q=$search"
-    elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
-        xdg-open "http://www.google.com/search?q=$search"
-    else
-        echo "Your OS is not supported :("
-    fi
-}
+search=""
+queryInit="http://www.google.com/search?q="
+
+for term in $@; do
+    search="$search$term%20"
+done
+
+if [ "$(uname)" == "Darwin" ]; then
+    open "$queryInit$search"
+elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
+    xdg-open "$queryInit$search"
+else
+    echo "Your OS is not supported :(. Only Linux and Mac are supported."
+fi

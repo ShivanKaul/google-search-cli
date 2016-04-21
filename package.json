@@ -8,7 +8,8 @@
     "url": "git+https://github.com/ShivanKaul/google-search-cli.git"
   },
   "bin": {
-    "g": "google-search-cli"
+    "g": "google-search-cli",
+    "google": "google-search-cli"
   },
   "keywords": [
     "google-search",

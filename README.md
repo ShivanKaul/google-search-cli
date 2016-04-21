@@ -1,10 +1,11 @@
 # google-search-cli
 
-Tiny package to search Google from CLI. Simply type in `g <search-query>`. Note: only supported for Mac and Linux.
+Tiny package to search Google from CLI. Simply type in `g <search-query>` or `google <search-query>`. Note: only supported for Mac and Linux.
 
 ## Usage
 ```
-g <search-query>
+g <search-query> # Or...
+google <search-query>
 ```
 
 ## Installation
